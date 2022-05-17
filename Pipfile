@@ -4,9 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pandas = "==1.2.0"
+numpy = "*"
+keras = "*"
+matplotlib = "*"
+tensorflow = "*"
+pandas = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.8"
+python_version = "3.7"
