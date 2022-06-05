@@ -13,7 +13,7 @@ def loadPredictData(pathG, pathC):
 
     df['time'] = pd.to_datetime(df['time'])
     df['month'] = df['time'].dt.month
-    df['day'] = df['time'].dt.dayofweek
+    df['day'] = df['time'].dt.day
     df['hour'] = df['time'].dt.hour
     df = df.drop(['time'], axis=1)
 
